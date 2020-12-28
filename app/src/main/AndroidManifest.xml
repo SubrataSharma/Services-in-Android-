@@ -21,7 +21,11 @@
 
         <service android:name=".service.MyService" />
         <receiver android:name=".broadcast_receiver.ExampleBroadcastReceiver"
-            android:exported="true"/>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.serviceinandroid.EXAMPLE_ACTION"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
