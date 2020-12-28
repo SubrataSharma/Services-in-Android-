@@ -10,11 +10,6 @@ public class ExampleBroadcastReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
 
-        if ("com.example.EXAMPLE_ACTION".equals(intent.getAction())) {
-            String receivedText = intent.getStringExtra("com.example.EXAMPLE_TEXT");
-
-                Toast.makeText(context, receivedText, Toast.LENGTH_SHORT).show();
-
-        }
+        Toast.makeText(context, "Example Broadcast receiver", Toast.LENGTH_SHORT).show();
     }
 }

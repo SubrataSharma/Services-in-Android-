@@ -9,23 +9,16 @@ import android.os.Bundle;
 import com.example.serviceinandroid.R;
 
 public class BroadcastReceiverActivity extends AppCompatActivity {
-    ExampleBroadcastReceiver broadcastReceiver = new ExampleBroadcastReceiver();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_broadcast_receiver);
 
-        IntentFilter intentFilter = new IntentFilter("com.example.EXAMPLE_ACTION");
-        registerReceiver(broadcastReceiver, intentFilter);
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        unregisterReceiver(broadcastReceiver);
 
     }
+
+
 
 
 }

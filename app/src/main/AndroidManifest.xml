@@ -20,7 +20,8 @@
         </activity>
 
         <service android:name=".service.MyService" />
-
+        <receiver android:name=".broadcast_receiver.ExampleBroadcastReceiver"
+            android:exported="true"/>
     </application>
 
 </manifest>
